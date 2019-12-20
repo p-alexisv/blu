@@ -20,6 +20,9 @@ wget https://raw.githubusercontent.com/p-alexisv/blu/master/blu.sh
 $ bash blu.sh service-instance_uuid.tgz
 ```
 
+That's it!
+
+
 e.g.,
 
 ```
@@ -93,5 +96,15 @@ Uncompressing the TGZ files now...
 
 
 Done uncompressing all files.
-ubuntu@opsmanager-2-7:/tmp/x$
+ubuntu@opsmanager-2-7:/tmp/x$ ls -l
+total 8
+-rw-rw-r-- 1 ubuntu ubuntu 2461 Dec 20 17:37 blu.sh
+drwxr-xr-x 5 ubuntu ubuntu 4096 Dec 20 17:38 service-instance_c233be5b-5e87-4b28-af73-226a965a9823-20191220-173524-376330212
+ubuntu@opsmanager-2-7:/tmp/x$ cd service-instance_c233be5b-5e87-4b28-af73-226a965a9823-20191220-173524-376330212/
+ubuntu@opsmanager-2-7:/tmp/x/service-instance_c233be5b-5e87-4b28-af73-226a965a9823-20191220-173524-376330212$ ls -l
+total 12
+drwxr-xr-x 12 ubuntu ubuntu 4096 Dec 20 17:35 master.98b75254-5676-420e-a064-5c757adb3596
+drwxr-xr-x 13 ubuntu ubuntu 4096 Dec 20 17:35 worker.29ab3f8b-82fa-4ae7-9c69-cac77685b662
+drwxr-xr-x 13 ubuntu ubuntu 4096 Dec 20 17:35 worker.9fc610d2-d858-4de5-9660-853ad8b90557
+ubuntu@opsmanager-2-7:/tmp/x/service-instance_c233be5b-5e87-4b28-af73-226a965a9823-20191220-173524-376330212$
 ```
